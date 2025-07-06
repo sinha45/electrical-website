@@ -57,20 +57,46 @@
             <h1 style="font-family: 'Outfit', sans-serif;"  class="text-8xl font-bold title-font mt-4 mb-2 text-white">Material at an Unbeatable Price!</h1>
           </div>
           <div>
-            
-              <button class="rounded-full overflow-hidden shadow-lg hover:ring-4 ring-yellow-400 transition-all duration-300">
-  <img src="your-image.png" alt="Custom Button" class="w-20 h-20 object-cover" />
-</button>
 
-           
-          </div>
+            
+            <!-- animated button -->
+<!-- Centering Container -->
+<div class="flex items-center justify-center mt-20">
+  <!-- Capsule Button Container -->
+  <div class="relative w-8 h-[80px] overflow-hidden">
+
+    <!-- Background Rectangle Image -->
+    <img src="assets/Rectangle.png" alt="" class="absolute top-0 left-0 w-[50px] h-[60px]object-cover pointer-events-none" />
+
+    <!-- Animated Yellow Circle -->
+    <div
+      class="absolute top-1 left-2 w-4 h-4 bg-[#F5B216] border-2 border-black rounded-full animate-[moveDownUp_2s_ease-in-out_infinite]"
+    ></div>
+
+  </div>
+</div>
+
+<!-- Keyframe Animation -->
+<style type="text/tailwindcss">
+  @layer utilities {
+    @keyframes moveDownUp {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(32px); }
+      100% { transform: translateY(0); }
+    }
+  }
+</style>
+
+
         
         </div>
+         
       </header>
       <!-- Hero section ends -->
 
       
        <!-- Product Section -->
+
 <div class="flex flex-col items-center justify-center bg-black w-full h-full">
  
      
@@ -329,60 +355,66 @@
 
 <!-- Product title end-->
 
-<!-- ABOUT Starts -->
-<div class="w-full h-screen">
-<div class="w-full h-full bg-black/90 bg-[url('./assets/LocationBG.png')] bg-no-repeat bg-cover bg-center">
-<div class="relative bg-black text-white py-16 overflow-hidden">
+
+                                <!-- ABOUT Starts -->
+
+
+
+<div class="w-full h-full">
+  <div class="w-full min-h-[1500px] bg-black/90 bg-[url('./assets/LocationBG.png')] bg-no-repeat bg-cover bg-top">
+  <!-- Section Header -->
+  <h1 style="font-family: 'Bebas Neue', sans-serif;" class="text-white text-5xl text-center pt-20 pb-10 mb-40 opacity-70">
+    ● ABOUT US
+  </h1>
+
+  <!-- Container -->
+  <!-- Container -->
+<div class="relative max-w-4xl mx-auto">
   
+  <!-- Top-Left Floating R Logo BEHIND -->
+  <img src="./assets/R logo.png"
+       alt="Background R Logo"
+       class="absolute -top-38 -left-18 w-52  z-0 pointer-events-none" />
 
-  <!-- Heading -->
-  <h1 h1 style="font-family: 'Bebas Neue', sans-serif;"  class="relative z-10 text-white text-5xl text-center mt-5 mb-48 opacity-70">ABOUT US</h1>
+  <!-- Yellow Bordered Image Box (z-10 to appear above logo) -->
+  <div class="relative z-10 rounded-xl border-[5px] border-yellow-500 overflow-hidden shadow-xl">
+    <img src="./assets/AboutBG.png" alt="About" class="w-full object-cover" />
 
-  <!-- Main container -->
-<div class="relative z-10 max-w-5xl mx-auto bg-white shadow-lg ">
-
-  <!-- Background image section -->
-<!-- Outer wrapper to contain everything -->
-<div class="relative">
-
-  <!-- Logo - placed outside the rounded image box -->
-  <img src="assets/RAH.png" alt="Logo"
-    class="absolute -top-8 -left-5 w-24 md:w-32 z-50 -translate-x-1/3 -translate-y-1/3" />
-
-  <!-- Background image section -->
-  <div class="relative z-10">
-    <img src="assets/AboutBG.png" alt="About Background"
-      class="w-full h-auto" />
+    <!-- Bottom-Right Mini R Logo Inside Image Box -->
+    <img src="./assets/R small.png"
+         alt="Corner R Logo"
+         class="absolute bottom-9 right-9 w-5 md:w-8" />
   </div>
 
-
-
-
-
-
-    <!-- Text content section -->
-    <div class="pt-5 bg-black bg-opacity-9">
-      <h1 style="font-family: 'Outfit', sans-serif;" class="mt-5 text-white text-2xl font-bold text-justify"><span class="text-white font-extrabold uppercase">RUKN AL HASAN Electric Ware & Trade</span><span class="font-thin text-lg text-white/70"> Is A Limited Liability Company Incorporated In The United  Arab Emirates .Include Trading On All Electrical Materials,  Sanitary Materials, Hardware,To      ols &  Air-Conditioning. Rukn Al Hasan Has The Unique Ability To Provide Customers With Complete Solutions From One Source -And  This Differentiates It From Other Suppliers.we are committed to powering homes, businesses, and industries with top-tier electrical solutions. With years of expertise in the industry, we provide durable, efficient, and cost-effective electrical products to meet the needs of contractors, engineers, and businesses across the UAE.</span></h1>
+  <!-- Text Content -->
+      <div class="pt-2 bg-opacity-9">
+      <h1 style="font-family: 'Outfit', sans-serif;" class="mt-5 text-white text-2xl font-bold text-justify"><span class="text-yellow-500 font-extrabold uppercase">RUKN AL HASAN Electric Ware & Trade</span><span class="font-thin text-2xl text-white"> Is a Limited Liability Company incorporated in the United Arab Emirates. Located in Al Ghuwair Market, Sharjah, we trade in <span class="font-medium">All Electrical Materials, Sanitary Products, Hardware, Tools, And Air-Conditioning Systems.
+By Offering Complete Project Solutions From A Single Source</span>, we relieve project managers of logistical headaches—ensuring quality, timing, and compliance every step of the way. Through personalized service and unwavering commitment to customer needs, we’ve become the supplier of choice for bulk requirements and critical site shortages across the UAE. ...</span></h1>
     
 
       <!-- Button -->
       <div class="mt-9">
-        <button class="bg-yellow-500 text-white px-9 py-2 rounded-md text-sm font-semibold hover:border-transparent hover:text-black">
-          MORE
+        <button class="bg-transparent border-3 border-yellow-500 rounded-lg font-semibold hover:border-transparent hover:text-black">
+          <p style="font-family: 'Outfit', sans-serif;"  class="text-md text-white px-11 py-2">More</p>
         </button>
       </div>
     </div>
+
+    </div>
   </div>
 </div>
-</div>
-</div>
-</div>
 
-<!-- ABOUT Ends -->
 
-<div class="bg-black">
 
-</div>
+
+
+                          
+
+
+
+                             <!-- ABOUT Ends -->
+
+
 
 <!-- Quotation starts -->
 
