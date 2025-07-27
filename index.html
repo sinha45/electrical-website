@@ -336,33 +336,97 @@
 
 
 
-<section class="bg-black/60 mt-[600px] py-22">
-  <div class="max-w-8xl mx-auto px-10">
-    <div class="flex flex-wrap justify-center items-center gap-15">
-      <!-- Brand Logo 1 -->
-      <img src="/assets/PHILLIPS.png" alt="Philips" class="h-10 object-contain" />
-      <!-- Brand Logo 2 -->
-      <img src="/assets/SaudiCable.png" alt="Saudi Cable" class="h-10 object-contain" />
-      <!-- Brand Logo 3 -->
-      <img src="/assets/3M.png" alt="3M" class="h-10 object-contain" />
-      <!-- Brand Logo 4 -->
-      <img src="/assets/AlFanar.png" alt="Alfanar" class="h-10 object-contain" />
-      <!-- Brand Logo 5 -->
-      <img src="/assets/Kopex.png" alt="Kopex" class="h-10 object-contain" />
-      <!-- Brand Logo 6 -->
-      <img src="/assets/LS.png" alt="LS Cable" class="h-10 object-contain" />
-      <!-- Brand Logo 7 -->
-      <img src="/assets/ABB.png" alt="LS Cable" class="h-10 object-contain" />
+<style>
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+
+<section class="bg-black/60 mt-[675px] py-10 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="relative flex overflow-hidden">
+      <div class="flex shrink-0 gap-10 items-center animate-[marquee-scroll_45s_linear_infinite]">
+        <!-- Logos (inserted twice for seamless loop) -->
+        <div class="flex gap-10 items-center min-w-max">
+          <img src="/assets/PHILLIPS.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/SaudiCable.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/3M.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/AlFanar.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Kopex.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/LS.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/ABB.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Tridonic.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/TOPCABLE.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/TE.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/Schneider.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/pce.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/oman cables.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/nexans.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/ht_logo_rgb_screen_th.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/gia.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/gamakabel.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Ecolink.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/Cortem Group.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/Cembre.png" class="h-10 md:h-32 object-contain" />
+          <img src="/assets/Cellpack.png" class="h-10 md:h-32 object-contain" />
+          <img src="/assets/Burndy.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/bicon.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/belden.png" class="h-10 md:h-24 object-contain" />
+          <img src="/assets/bandex.png" class="h-10 md:h-32 object-contain" />
+          <img src="/assets/ariston-cavi-logo.png" class="h-10 md:h-32 object-contain" />
+        </div>
+
+        <!-- DUPLICATE for seamless scrolling -->
+        <div class="flex gap-10 items-center min-w-max">
+          <img src="/assets/PHILLIPS.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/SaudiCable.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/3M.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/AlFanar.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Kopex.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/LS.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/ABB.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Tridonic.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/TOPCABLE.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/TE.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Schneider.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/pce.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/oman cables.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/nexans.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/ht_logo_rgb_screen_th.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/gia.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/gamakabel.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Ecolink.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Cortem Group.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Cembre.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Cellpack.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/Burndy.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/bicon.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/belden.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/bandex.png" class="h-10 md:h-14 object-contain" />
+          <img src="/assets/ariston-cavi-logo.png" class="h-10 md:h-14 object-contain" />
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-<!-- BRANDS -->
+
+
+
+
+
+
+
+
+                                 <!-- BRANDS Ends-->
 
 </div>
 
-<!-- Product title end-->
+                           <!-- Product title end-->
+
+
 
 
                                 <!-- ABOUT Starts -->
